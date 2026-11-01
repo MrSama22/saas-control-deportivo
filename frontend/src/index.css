@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Personalización del contenedor del escáner html5-qrcode para móviles */
+#qr-reader video {
+  border-radius: 1rem !important;
+  object-fit: cover !important;
+  width: 100% !important;
+}

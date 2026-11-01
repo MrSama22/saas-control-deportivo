@@ -1,0 +1,26 @@
+# NUNCA subir bases de datos con clientes reales o de prueba
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+
+# NUNCA subir variables de entorno ni contraseñas
+.env
+.env.*
+!.env.example
+.env.local
+
+# Carpetas pesadas que no van en GitHub
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+backend/.venv/
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+.vite/
+*.log
